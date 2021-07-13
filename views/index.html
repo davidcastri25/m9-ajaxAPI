@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+
+    <title>JQuery + AJAX - lvl1 & lvl2</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Encabezado de la página -->
+        <header class="header">
+            <h1>The Comedy Club: Chuck Norris Edition</h1>
+        </header>
+
+        <!-- Sección de chistes y botón-->
+        <section class="jokeSection">
+            <!-- Contenedor donde se mostrará el chiste -->
+            <div class="jokeContainer">
+                <p id="joke">
+
+                </p>
+            </div>
+
+            <!-- Botón que hará la llamada AJAX -->
+            <button type="button" id="ajaxBtn">
+                <i class="fas fa-theater-masks"></i>
+                Request another joke!
+            </button>
+        </section>
+
+        <!-- Sección imágenes (a completar en nivel 2) -->
+        <section class="imageSection">
+            <img src="./images/microphone.png" alt="Imagen micrófono">
+        </section>
+    </div>
+
+
+
+
+
+
+    <!-- Jquery Link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Links de nuestro código JS -->
+    <script src="../controllers/mainApp.js"></script>
+</body>
+
+</html>
