@@ -67,7 +67,8 @@ body {
 
 .imageSection {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0px; }
 
 @keyframes flicker {
   0%,

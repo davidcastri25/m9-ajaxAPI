@@ -1,7 +1,14 @@
 $(document).ready(function () {
 
+    //Creamos los audios
+    let applause = document.getElementById("applause");
+    let drums = document.getElementById("drums");
+
     //Al cargarse la página hacemos ya la primera llamada AJAX y mostramos el primer chiste
     ajaxCall();
+
+    //Reproducimos aplauso (necesario desbloquear autoreproducción de audio)    
+    applause.play();
 
     //Cada vez que hagamos click en el botón, nos debe mostrar otro chiste
     $("#ajaxBtn").click(function (e) {
@@ -12,6 +19,9 @@ $(document).ready(function () {
 
         //Llamamos a la función con la llamada AJAX
         ajaxCall();
+
+        //Reproducimos sonido batería
+        drums.play();
 
     });
 

@@ -25,7 +25,7 @@
         <!-- Encabezado de la página -->
         <header class="header">
             <h1 id="headerTitle">The Comedy Club: Chuck Norris Edition</h1>
-            <span class="gradient"></span>
+            <audio id="applause" src="./sounds/Applause Sound Effect.mp3"></audio>
         </header>
 
         <!-- Sección de chistes y botón-->
@@ -46,10 +46,12 @@
                     </span>
                     
                 </button>
+                <!-- Audio a reproducir cuando se apreta el botón -->
+                <audio id="drums" src="./sounds/Joke Sound Effect (Ba dum tss!).mp3"></audio>
             </div>            
         </section>
 
-        <!-- Sección imágenes (a completar en nivel 2) -->
+        <!-- Sección imágenes (si el chiste tuviera audio asociado, podría ser el elemento que lanzase el evento de reproducción) -->
         <section class="imageSection">
             <img src="./images/microphone.png" alt="Imagen micrófono" id="microImg">
         </section>
