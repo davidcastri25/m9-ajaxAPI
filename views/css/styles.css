@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* Imports */
+/* Color rojo para animación neón */
+/* Color azul verdoso para animación neón */
+/* Mixin para elementos con d-flex y justify content center */
 * {
   margin: 10px;
   padding: 10px;
@@ -32,8 +37,8 @@ body {
 
 .jokeSection {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .jokeSection .jokeContainer {
     flex-basis: 100%;
     display: flex;

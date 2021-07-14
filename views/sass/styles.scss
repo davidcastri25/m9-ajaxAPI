@@ -1,3 +1,7 @@
+/* Imports */
+@import "./components/colors"; //Variables de color
+@import "./components/mixins"; //Mixins
+
 * {
   margin: 10px;
   padding: 10px;
@@ -37,14 +41,12 @@ body {
 }
 
 .jokeSection {
-  display: flex;
+  @include flexJustifyCenter;
   flex-wrap: wrap;
-  justify-content: center;
 
   .jokeContainer {
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
+    @include flexJustifyCenter;
     border: none;
     border-radius: 4px;
     background-color: rgba(236, 208, 208, 0.356);
@@ -60,8 +62,7 @@ body {
 
   .ajaxBtnContainer {
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
+    @include flexJustifyCenter;
 
     #ajaxBtn {
       display: flex;
@@ -92,8 +93,7 @@ body {
 }
 
 .imageSection {
-  display: flex;
-  justify-content: center;
+  @include flexJustifyCenter;
   margin: 0px;
 }
 
@@ -110,9 +110,9 @@ body {
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px rgb(250, 68, 68), 0 0 11px rgb(250, 68, 68),
-      0 0 19px rgb(250, 68, 68), 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa,
-      0 0 100px #0fa, 0 0 150px #0fa;
+    text-shadow: 0 0 4px $redNeon, 0 0 11px $redNeon, 0 0 19px $redNeon,
+      0 0 40px $blueNeon, 0 0 80px $blueNeon, 0 0 90px $blueNeon,
+      0 0 100px $blueNeon, 0 0 150px $blueNeon;
   }
   20%,
   24%,
