@@ -10,6 +10,9 @@ $(document).ready(function () {
     //Reproducimos aplauso (necesario desbloquear autoreproducción de audio)    
     applause.play();
 
+    //Animamos micrófono
+    $("#microImg").slideDown(500);
+
     //Cada vez que hagamos click en el botón, nos debe mostrar otro chiste
     $("#ajaxBtn").click(function (e) {
         e.preventDefault();

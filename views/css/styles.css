@@ -7,7 +7,8 @@
 body,
 html {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  height: 100%; }
 
 body {
   padding: 0px;
@@ -15,7 +16,9 @@ body {
   background: url("https://cdn.pixabay.com/photo/2016/03/23/17/33/curtain-1275200_1280.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #7e0303; }
 
 .header {
   filter: brightness(200%); }
@@ -24,7 +27,8 @@ body {
     font-family: "Zen Tokyo Zoo", cursive;
     font-size: 50px;
     font-weight: bold;
-    animation: flicker 1.5s infinite alternate; }
+    animation: flicker 1.5s infinite alternate;
+    letter-spacing: 1.5px; }
 
 .jokeSection {
   display: flex;
@@ -69,6 +73,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 0px; }
+
+#microImg {
+  position: relative;
+  display: none; }
 
 @keyframes flicker {
   0%,
